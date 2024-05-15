@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 // components
-import ParticalesContainer from "../components/ParticlesContainer";
+import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 
@@ -48,7 +48,7 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="hidden xl:flex">
+            className="hidden xl:flex z-10">
             <ProjectsBtn />
           </motion.div>
         </div>
@@ -60,7 +60,7 @@ const Home = () => {
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* particles */}
 
-        <ParticalesContainer />
+        <ParticlesContainer />
 
         {/* avatar img*/}
         <motion.div
@@ -69,7 +69,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           transition={{ duration: 1, ease: 'ease-in-out' }}
-          className="w-full h-full max-w-[550px] max-h-[550px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]">
+          className="w-full h-full max-w-[550px] max-h-[550px] absolute -bottom-32 lg:bottom-0 lg:right-[6%] grayscale-[20%]">
           <Avatar />
         </motion.div>
       </div>

@@ -54,16 +54,27 @@ const Nav = () => {
               key={index}
             >
               {/* tooltip */}
-              <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
-                <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[8px]">
+              <div className="absolute pr-[50px] right-0 flex opacity-0 xl:group-hover:opacity-100 transition-all duration-300">
+                <div className=" relative flex text-white items-center px-[12px] py-[3px] rounded-[6px] backdrop-blur-[10px] bg-white/40">
                   <div className="text-[12px] leading-none font-semibold capitalize">
                     {link.name}
                   </div>
                   {/* triangle */}
+                  {/* <div
+                    className="border-solid border-l-white/30 border-l-8 border-y-transparent border-y-[8px]
+                border-r-0 absolute -right-[9px]"
+                  >
+                  </div> */}
                   <div
-                    className="border-solid border-l-white border-l-8 border-y-transparent border-y-[6px]
-                border-r-0 absolute -right-[6px]"
-                  ></div>
+                    className="border-solid border-l-white/40 border-l-8 border-y-transparent border-y-[8px]
+                border-r-0 absolute -right-[10px]"
+                  >
+                  </div>
+                  <div
+                    className="border-solid border-l-black/20 border-l-8 border-y-transparent border-y-[8px]
+                border-r-0 absolute -right-[16px]"
+                  >
+                  </div>
                 </div>
               </div>
               {/* icon */}
