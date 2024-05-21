@@ -6,13 +6,15 @@ import {
   HiRectangleGroup,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
+  HiMiniWrenchScrewdriver,
+  HiFingerPrint
 } from "react-icons/hi2";
 
 // nav data
 export const navData = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "services", path: "/services", icon: <HiMiniWrenchScrewdriver /> },
   { name: "work", path: "/work", icon: <HiViewColumns /> },
   {
     name: "testimonials",
@@ -23,6 +25,11 @@ export const navData = [
     name: "contact",
     path: "/contact",
     icon: <HiEnvelope />,
+  },
+  {
+    name: "impress",
+    path: "/impress",
+    icon: <HiFingerPrint />,
   },
 ];
 
@@ -48,15 +55,15 @@ const Nav = () => {
         {navData.map((link, index) => {
           return (
             <Link
-              className={`${link.path === pathName && "text-accent"} relative flex items-center group
+              className={`${link.path === pathName ? 'text-accent' : 'text-black'} relative flex items-center group
            hover:text-accent transition-all duration-300`}
               href={link.path}
               key={index}
             >
               {/* tooltip */}
-              <div className="absolute pr-[50px] right-0 flex opacity-0 xl:group-hover:opacity-100 transition-all duration-300">
-                <div className=" relative flex text-white items-center px-[12px] py-[3px] rounded-[6px] backdrop-blur-[10px] bg-white/40">
-                  <div className="text-[12px] leading-none font-semibold capitalize">
+              <div className="absolute hidden xl:flex pr-[50px] right-0 opacity-0 xl:group-hover:opacity-100 transition-all duration-300 animate-shake">
+                <div className=" relative flex items-center px-[12px] py-[3px] rounded-[6px] backdrop-blur-[10px] bg-white/40">
+                  <div className="text-[12px] leading-none font-semibold capitalize text-black">
                     {link.name}
                   </div>
                   {/* triangle */}

@@ -19,6 +19,10 @@ module.exports = {
       md: "768px",
       lg: "960px",
       xl: "1200px",
+      '2xl': "1400px",
+      '3xl': "1640px",
+      '4xl': "1860px",
+
     },
     extend: {
       colors: {
@@ -34,6 +38,13 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
+        "shake": 'shake 1s ease-in-out infinite',
+      },
+      keyframes: {
+        shake: {
+          '0%, 100%': { transform: 'translateX(-3px)' },
+          '50%': { transform: 'translateX(3px)' },
+        }
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, "sans-serif"],
