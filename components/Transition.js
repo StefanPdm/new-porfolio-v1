@@ -1,5 +1,5 @@
 // framer motion
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // variants
 const transitionVariants = {
@@ -26,7 +26,7 @@ const Transition = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.5, duration: 0.5, ease: 'linear' }}>
+        transition={{ delay: 0.2, duration: 0.4, ease: 'linear' }}>
       </motion.div>
       <motion.div className='fixed top-0 bottom-0 right-full h-screen w-screen z-30
       bg-[#3b3d71]'
@@ -34,7 +34,7 @@ const Transition = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.3, duration: 0.4, ease: 'linear' }}>
+        transition={{ delay: 0.4, duration: 0.4, ease: 'linear' }}>
       </motion.div>
       <motion.div className='fixed top-0 bottom-0 right-full h-screen w-screen z-20
       bg-[#4b3792]'
@@ -42,7 +42,7 @@ const Transition = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.1, duration: 0.3, ease: 'linear' }}>
+        transition={{ delay: 0.6, duration: 0.4, ease: 'linear' }}>
       </motion.div>
     </>
   );

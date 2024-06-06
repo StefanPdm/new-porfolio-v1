@@ -1,6 +1,3 @@
-// next Image
-import Image from "next/image";
-
 // components
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -15,12 +12,9 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-
       {/* text */}
       <div className="w-full h-full">
-
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
-
           {/* title */}
           <motion.h1
             variants={fadeIn('down', 0.2)} // direction, delay

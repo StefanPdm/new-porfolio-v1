@@ -48,4 +48,8 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
+
+  .skills-pr {
+    padding-right: calc(40px + 2vw);
+  }
 }
